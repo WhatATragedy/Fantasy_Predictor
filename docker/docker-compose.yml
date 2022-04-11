@@ -1,0 +1,9 @@
+elk:
+    image: sebp/elk
+    ports:
+      - "8888:5601"
+      - "9200:9200"
+      - "5044:5044"
+    volumes:
+        - /home/ubuntu/data/elk-data:/var/lib/elasticsearch
+  
